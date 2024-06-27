@@ -1,21 +1,23 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* LandingPage.css */
 
-.landing-page {
-  font-family: 'Arial', sans-serif; /* O la fuente que prefieras */
+.App{
+  font-family: 'Arial', sans-serif;
+  /* O la fuente que prefieras */
 }
 
 .navbar {
-  background-image: linear-gradient(to right, #2c3e50, #3498db); /* Gradiente azul oscuro a azul claro */
+  background-image: linear-gradient(to right, #2c3e50, #3498db);
+  /* Gradiente azul oscuro a azul claro */
   color: white;
-  padding: 1rem; /* Margen interno */
+  padding: 1rem;
+  /* Margen interno */
 }
 
 .navbar a {
   color: white;
   text-decoration: none;
-  margin: 0 1rem; /* Margen lateral */
+  margin: 0 1rem;
+  /* Margen lateral */
 }
 
 .dropdown {
@@ -48,11 +50,13 @@
 }
 
 main {
-  padding: 2rem; /* Márgenes en el contenido principal */
+  padding: 2rem;
+  /* Márgenes en el contenido principal */
 }
 
 main p {
-  line-height: 1.6; /* Interlineado para mejor legibilidad */
+  line-height: 1.6;
+  /* Interlineado para mejor legibilidad */
 }
 
 footer {

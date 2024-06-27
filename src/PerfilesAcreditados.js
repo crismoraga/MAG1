@@ -8,18 +8,19 @@ const PerfilesAcreditados = () => {
 
   const handleVerify = () => {
     if (validCodes.includes(code)) {
-      setMessage('Trabajador Verificado');
+      setMessage('Código Válido');
     } else {
-      setMessage('Trabajador no verificado');
+      setMessage('Código Invalido');
     }
   };
 
-  return (
-    <div className="p-4">
+return (
+  <div className="p-4 flex"> {/* Agregar la clase flex para usar flexbox */}
+    <div className="w-1/2 pr-2"> {/* Dividir en dos columnas, mitad izquierda */}
       <h2 className="text-2xl font-bold mb-4">Verificar Trabajador</h2>
       <input
         type="text"
-        placeholder="Ingrese el código"
+        placeholder="Ingrese el código a verificar"
         value={code}
         onChange={(e) => setCode(e.target.value)}
         className="border p-2 mb-4 w-full"
@@ -32,7 +33,12 @@ const PerfilesAcreditados = () => {
       </button>
       {message && <p className="mt-4">{message}</p>}
     </div>
+    <div className="w-1/2 pl-2">
+      <div>
+        <img src="https://i.ibb.co/b6MQt8H/office-employee-with-ai-generated-free-png-2.png" alt="Office Employee" className="shadow"  />
+      </div>
+    </div>
+  </div>
   );
-};
-
+}
 export default PerfilesAcreditados;
